@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirkup Consulting - Digital Pathology Consulting Services">
+    <title>Kirkup Consulting - Digital Pathology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #2a5298;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            padding: 3rem 0;
+            min-height: calc(100vh - 300px);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 0.5rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 3rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            margin-top: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kirkup Consulting</h1>
+            <p>Digital Pathology Consulting Services</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <h2>Welcome</h2>
+                <p class="intro">
+                    Kirkup Consulting provides expert digital pathology consulting services, 
+                    helping organizations navigate the complexities of digital pathology implementation, 
+                    workflow optimization, and technology integration. Led by Christian Kirkup, 
+                    we bring deep expertise and practical solutions to your digital pathology challenges.
+                </p>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Digital Pathology Strategy</h3>
+                        <p>
+                            Comprehensive planning and strategy development for digital pathology 
+                            implementation, including technology selection, workflow design, and 
+                            change management.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Workflow Optimization</h3>
+                        <p>
+                            Analysis and optimization of existing pathology workflows to maximize 
+                            efficiency and improve diagnostic accuracy through digital transformation.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Technology Integration</h3>
+                        <p>
+                            Expert guidance on integrating digital pathology systems with existing 
+                            laboratory information systems and healthcare IT infrastructure.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Training & Education</h3>
+                        <p>
+                            Customized training programs for pathologists, technicians, and IT staff 
+                            to ensure successful adoption of digital pathology technologies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <p class="intro">
+                    Christian Kirkup brings extensive experience in digital pathology, combining 
+                    clinical expertise with technical knowledge to deliver practical, effective 
+                    solutions. Our consulting approach focuses on understanding your unique needs 
+                    and providing tailored recommendations that drive real results.
+                </p>
+            </section>
+
+            <section id="contact">
+                <div class="contact-section">
+                    <h2 style="border-bottom-color: #1e3c72; color: #1e3c72;">Contact Us</h2>
+                    <p class="intro" style="color: #555;">
+                        Interested in learning how we can help with your digital pathology needs? 
+                        Get in touch to discuss your project.
+                    </p>
+                    <div class="contact-info">
+                        <p><strong>Kirkup Consulting</strong></p>
+                        <p>Digital Pathology Consulting Services</p>
+                        <p>Contact us to discuss your consulting needs.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kirkup Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
